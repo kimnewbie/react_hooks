@@ -1,9 +1,9 @@
-import UseMemoSecond from "./hooks/UseMemoSecond";
+import UseCallbackSecond from "./hooks/UseCallbackSecond";
 
 function App() {
   return (
     <div className="container">
-      <UseMemoSecond />
+      <UseCallbackSecond />
     </div>
   );
 }
