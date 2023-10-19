@@ -28,6 +28,7 @@ const UseState = () => {
 
     const handleUpload = () => {
         setNames((prev) => {
+            console.log('이전 state : ', prev)
             return [input, ...prev];
         })
     }
