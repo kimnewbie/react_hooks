@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 
 // input이 계속 호출되는 걸 막기 위한 함수
 const heavyWork = () => {
@@ -38,7 +38,7 @@ const UseState = () => {
         <div>
             <h1>현재 시각 : {time}시</h1>
             <button onClick={handleClick}>Update</button>
-            <div className='break_line'></div>
+            <div className='line_breaker'></div>
             <input type="text" value={input} onChange={handleInputChange} />
             <button onClick={handleUpload}>Upload</button>
             {

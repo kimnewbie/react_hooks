@@ -1,9 +1,9 @@
-import UseState from "./hooks/UseState";
+import { UseEffect } from "./hooks/UseEffect";
 
 function App() {
   return (
     <div className="container">
-      <UseState />
+      <UseEffect />
     </div>
   );
 }
