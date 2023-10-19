@@ -1,9 +1,9 @@
-import UseRefSecond from "./hooks/UseRefSecond";
+import UseContext from "./hooks/UseContext";
 
 function App() {
   return (
     <div className="container">
-      <UseRefSecond />
+      <UseContext />
     </div>
   );
 }
