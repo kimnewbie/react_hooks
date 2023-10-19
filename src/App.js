@@ -1,9 +1,9 @@
-import UseRef from "./hooks/UseRef";
+import UseRefSecond from "./hooks/UseRefSecond";
 
 function App() {
   return (
     <div className="container">
-      <UseRef />
+      <UseRefSecond />
     </div>
   );
 }
