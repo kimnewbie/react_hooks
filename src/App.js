@@ -1,9 +1,9 @@
-import UseContext from "./hooks/UseContext";
+import UseMemo from "./hooks/UseMemo";
 
 function App() {
   return (
     <div className="container">
-      <UseContext />
+      <UseMemo />
     </div>
   );
 }
