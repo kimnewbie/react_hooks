@@ -1,9 +1,9 @@
-import UseCallbackSecond from "./hooks/UseCallbackSecond";
+import UseReducer from "./hooks/UseReducer";
 
 function App() {
   return (
     <div className="container">
-      <UseCallbackSecond />
+      <UseReducer />
     </div>
   );
 }
