@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { memo } from 'react'
 
 const Child = ({ name, age }) => {
     console.log('👶 자녀 컴포넌트도 렌더링이 되었어요!');
@@ -17,4 +17,4 @@ const Child = ({ name, age }) => {
     )
 }
 
-export default Child
+export default memo(Child)
