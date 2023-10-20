@@ -1,9 +1,9 @@
-import UseReducerSecond from "./hooks/UseReducerSecond";
+import ReactMemo from "./hooks/ReactMemo";
 
 function App() {
   return (
     <div className="container">
-      <UseReducerSecond />
+      <ReactMemo />
     </div>
   );
 }
