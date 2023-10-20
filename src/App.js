@@ -1,9 +1,9 @@
-import UseReducer from "./hooks/UseReducer";
+import UseReducerSecond from "./hooks/UseReducerSecond";
 
 function App() {
   return (
     <div className="container">
-      <UseReducer />
+      <UseReducerSecond />
     </div>
   );
 }
