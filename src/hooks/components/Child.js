@@ -1,6 +1,6 @@
 import React, { memo } from 'react'
 
-const Child = ({ name }) => {
+const Child = ({ name, tellMe }) => {
     console.log('👶 자녀 컴포넌트도 렌더링이 되었어요!');
 
     return (
@@ -11,8 +11,12 @@ const Child = ({ name }) => {
             }}
         >
             <h3>👶 자녀</h3>
-            <p>성 : {name.lastName}</p>
-            <p>이름 : {name.firstName} </p>
+            <p>이름 : {name} </p>
+            <button
+                onClick={tellMe}
+            >
+                엄마 나 사랑해?
+            </button>
         </div>
     )
 }

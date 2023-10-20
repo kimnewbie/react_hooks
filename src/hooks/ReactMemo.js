@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from 'react'
+import React, { useCallback, useState } from 'react'
 import Child from './components/Child';
 
 const ReactMemo = () => {
@@ -9,12 +9,10 @@ const ReactMemo = () => {
         setParentAge(parentAge + 1);
     };
 
-    const name = useMemo(() => {
-        return {
-            lastName: '김',
-            firstName: '뉴진'
-        }
-    }, [])
+    // 함수라서 useCallback() 사용
+    const tellMe = useCallback(() => {
+        console.log('뉴지나 사랑해❤️');
+    }, []);
 
     console.log('👨‍👩‍👧‍👦 부모 컴포넌트가 렌더링이 되었어요!');
 
@@ -32,7 +30,7 @@ const ReactMemo = () => {
             >
                 부모 나이 증가
             </button>
-            <Child name={name} />
+            <Child name={'김뉴진'} tellMe={tellMe} />
         </div>
     );
 };
