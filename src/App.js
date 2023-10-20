@@ -1,9 +1,9 @@
-import ReactMemo from "./hooks/ReactMemo";
+import CustomHook from "./hooks/CustomHook";
 
 function App() {
   return (
     <div className="container">
-      <ReactMemo />
+      <CustomHook />
     </div>
   );
 }
