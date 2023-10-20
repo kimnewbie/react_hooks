@@ -1,17 +1,20 @@
-import React, { useState } from 'react'
+import React, { useMemo, useState } from 'react'
 import Child from './components/Child';
 
 const ReactMemo = () => {
     const [parentAge, setParentAge] = useState(0);
-    const [childAge, setChildAge] = useState(0);
+
 
     const incrementParentAge = () => {
         setParentAge(parentAge + 1);
     };
 
-    const incrementChildAge = () => {
-        setChildAge(childAge + 1);
-    };
+    const name = useMemo(() => {
+        return {
+            lastName: '김',
+            firstName: '뉴진'
+        }
+    }, [])
 
     console.log('👨‍👩‍👧‍👦 부모 컴포넌트가 렌더링이 되었어요!');
 
@@ -29,12 +32,7 @@ const ReactMemo = () => {
             >
                 부모 나이 증가
             </button>
-            <button
-                onClick={incrementChildAge}
-            >
-                자녀 나이 증가
-            </button>
-            <Child name={'김유진'} age={childAge} />
+            <Child name={name} />
         </div>
     );
 };
